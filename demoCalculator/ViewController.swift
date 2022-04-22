@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
     }
     @IBAction func equalClick(_ sender: Any) {
-        var strResult = appCalculation.executeCalculation()
+        let strResult = appCalculation.executeCalculation()
         calculatorResult.text = strResult
         calculatorSteps.text = strResult
     }
