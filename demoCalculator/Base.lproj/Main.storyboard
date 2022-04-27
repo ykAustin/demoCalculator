@@ -258,31 +258,34 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LzD-uE-tUN">
-                                <rect key="frame" x="0.0" y="43.999999999999986" width="375" height="209.66666666666663"/>
+                                <rect key="frame" x="0.0" y="43.999999999999986" width="355" height="209.66666666666663"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Steps" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlZ-Bc-J0T">
-                                        <rect key="frame" x="0.0" y="16" width="337" height="81"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Result" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evD-z0-Fol">
-                                        <rect key="frame" x="0.0" y="117" width="337" height="84"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LUr-7E-oFt">
+                                        <rect key="frame" x="248.33333333333334" y="0.0" width="106.66666666666666" height="209.66666666666666"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Steps" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlZ-Bc-J0T">
+                                                <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="105"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Result" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evD-z0-Fol">
+                                                <rect key="frame" x="0.0" y="105" width="106.66666666666667" height="104.66666666666669"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ZlZ-Bc-J0T" firstAttribute="leading" secondItem="LUr-7E-oFt" secondAttribute="leading" id="ZXs-Pp-FXd"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="ZlZ-Bc-J0T" firstAttribute="top" secondItem="LzD-uE-tUN" secondAttribute="top" id="BXe-FY-1zg"/>
-                                    <constraint firstItem="evD-z0-Fol" firstAttribute="leading" secondItem="LzD-uE-tUN" secondAttribute="leading" id="NXl-YB-bce"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZlZ-Bc-J0T" secondAttribute="trailing" id="PqC-wg-FXU"/>
-                                    <constraint firstAttribute="bottom" secondItem="evD-z0-Fol" secondAttribute="bottom" id="aR8-Db-jy6"/>
-                                    <constraint firstItem="evD-z0-Fol" firstAttribute="leading" secondItem="ZlZ-Bc-J0T" secondAttribute="leading" id="mYr-cm-oDT"/>
-                                    <constraint firstItem="evD-z0-Fol" firstAttribute="top" secondItem="ZlZ-Bc-J0T" secondAttribute="bottom" id="nlA-kx-PCG"/>
-                                    <constraint firstItem="evD-z0-Fol" firstAttribute="height" secondItem="ZlZ-Bc-J0T" secondAttribute="height" id="uIN-fx-E5c"/>
-                                    <constraint firstAttribute="trailing" secondItem="evD-z0-Fol" secondAttribute="trailing" constant="20" id="w1h-HC-1Tf"/>
+                                    <constraint firstItem="LUr-7E-oFt" firstAttribute="top" secondItem="LzD-uE-tUN" secondAttribute="top" id="BjP-AV-WYF"/>
+                                    <constraint firstAttribute="trailing" secondItem="LUr-7E-oFt" secondAttribute="trailing" id="Wil-d6-3jh"/>
+                                    <constraint firstAttribute="bottom" secondItem="LUr-7E-oFt" secondAttribute="bottom" id="pCb-Oa-Oyz"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -294,7 +297,7 @@
                             <constraint firstItem="zLW-Eu-fOL" firstAttribute="height" secondItem="LzD-uE-tUN" secondAttribute="height" multiplier="5:2" id="MuN-dz-LE3"/>
                             <constraint firstItem="ddu-2e-QGK" firstAttribute="trailing" secondItem="zLW-Eu-fOL" secondAttribute="trailing" id="P2B-g6-eNp"/>
                             <constraint firstItem="zLW-Eu-fOL" firstAttribute="leading" secondItem="ddu-2e-QGK" secondAttribute="leading" id="S2k-a6-Zb5"/>
-                            <constraint firstItem="ddu-2e-QGK" firstAttribute="trailing" secondItem="LzD-uE-tUN" secondAttribute="trailing" id="U73-nd-Jca"/>
+                            <constraint firstItem="ddu-2e-QGK" firstAttribute="trailing" secondItem="LzD-uE-tUN" secondAttribute="trailing" constant="20" id="U73-nd-Jca"/>
                             <constraint firstItem="ddu-2e-QGK" firstAttribute="bottom" secondItem="zLW-Eu-fOL" secondAttribute="bottom" id="V5a-id-DnE"/>
                             <constraint firstItem="LzD-uE-tUN" firstAttribute="leading" secondItem="ddu-2e-QGK" secondAttribute="leading" id="gHE-WL-eqn"/>
                             <constraint firstItem="LzD-uE-tUN" firstAttribute="top" secondItem="ddu-2e-QGK" secondAttribute="top" id="jan-cJ-DQt"/>
